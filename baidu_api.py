@@ -28,11 +28,7 @@ def image_to_str(img):
     data['languagetype'] = "CHN_ENG"
     data['imagetype'] = "1"
 
-    file_object = open('221.jpg', 'rb')
-    try:
-        tmp = file_object.read()
-    finally:
-        file_object.close()
+
     # data['image'] = base64.b64encode(tmp)
     data['image'] = base64.b64encode(img)
 

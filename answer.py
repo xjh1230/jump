@@ -21,7 +21,7 @@ config = {
             (316, 993, 723, 1078),
             (316, 1174, 723, 1292),
             (316, 1366, 723, 1469),
-            (316, 1470, 723, 1657)
+            (316, 1590, 723, 1657)
         ]
     }
 }
@@ -127,7 +127,7 @@ def test_ocr():
 if __name__ == '__main__':
     input('请开始准备游戏')
     question_list = []
-
+    # do_click(config['头脑王者']['points'][3])
     while True:
         print("开始答题：")
         image = get_image()
@@ -145,4 +145,5 @@ if __name__ == '__main__':
                 print('answer: %s' % answer)
                 print(config['头脑王者']['points'][answer[0][2]])
                 do_click(config['头脑王者']['points'][answer[0][2]])
+                # do_click(config['头脑王者']['points'][3])
                 print("答题结束")
