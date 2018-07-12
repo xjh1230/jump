@@ -9,3 +9,5 @@ if __name__ == '__main__':
     plt.title('xxxx')
     # plt.show()
     plt.savefig('bar.png')
+
+    print('11')
